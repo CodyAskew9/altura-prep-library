@@ -1,0 +1,24 @@
+{
+  "name": "altura-prep-library",
+  "version": "1.0.0",
+  "description": "a library app yet again but this time for Altura Prep School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyAskew9/altura-prep-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodyAskew9/altura-prep-library/issues"
+  },
+  "homepage": "https://github.com/CodyAskew9/altura-prep-library#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  }
+}
