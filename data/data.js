@@ -7,7 +7,81 @@ const data = {
             password:'999',
             checkedOut: [],
             isAdmin: true
-        }
+        },
+        
+        {
+            name: 'Kwell',
+            password:'999',
+            checkedOut: [],
+            isAdmin: false
+        },
+        {
+            name: 'James',
+            password:'999',
+            checkedOut: [],
+            isAdmin: false
+        },
+        {
+            name: 'Lincoln G',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+        {
+            name: 'Cody',
+            password:'999',
+            checkedOut: [],
+            isAdmin: true
+        },
+
 
     ],
    books:[

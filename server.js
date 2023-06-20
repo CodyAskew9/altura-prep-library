@@ -1,13 +1,13 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import seedRouter from './routes/index.js'
-import dotenv from 'dotenv'
+import {config} from 'dotenv'
 import data from './data/data.js'
 import bookRouter from './routes/bookRoutes.js'
 
-dotenv.config()
+config()
 
-mongoose.connect(process.env.MONGODB_URL).then(() => {
+mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true }).then(() => {
     console.log("connected to database")
 }).catch((err) => {
     console.log(err)
