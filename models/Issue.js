@@ -1,6 +1,5 @@
-import { Mongoose } from "mongoose"; 
-
-const returnSchema = new mongoose.Schema({
+import { Mongoose } from "mongoose";
+const IssueSchema = new mongoose.Schema({
 
     userId:{
         type: String, 
@@ -28,9 +27,6 @@ const returnSchema = new mongoose.Schema({
         type: String,
        
     },
-    lateFees:{
-        type: String,
-    },
 
     year: {
         type: String,
@@ -39,13 +35,17 @@ const returnSchema = new mongoose.Schema({
     noOfday:{
         type:Number
     },
-    isReturn:{
+    isIssue:{
         type:Boolean,
         default:false
     },
-  
+    isRecom:{
+        type:Boolean,
+        default:false
+    }
+
 
 
 }, { timestamps: true });
 
-module.exports = mongoose.model("ReturnBook", returnSchema);
+module.exports = mongoose.model("Issue", IssueSchema);
