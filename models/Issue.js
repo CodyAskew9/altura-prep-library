@@ -1,4 +1,4 @@
-import { Mongoose } from "mongoose";
+const mongoose = require("mongoose");
 const IssueSchema = new mongoose.Schema({
 
     userId:{

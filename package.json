@@ -1,6 +1,5 @@
 {
   "name": "altura-prep-library",
-  "type": "module",
   "version": "1.0.0",
   "description": "a library app yet again but this time for Altura Prep School",
   "main": "index.js",

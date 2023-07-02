@@ -1,17 +1,17 @@
-import express from 'express'
-import mongoose from 'mongoose'
-import seedRouter from './routes/index.js'
-import {config} from 'dotenv'
-import data from './data/data.js'
-import bookRouter from './routes/bookRoutes.js'
-import cors from "cors"
-config()
+let express = require("express")
+let mongoose = require('mongoose')
+let cors = require('cors')
+let path = require('path')
+require('dotenv').config()
 
 mongoose.connect(process.env.MONGODB_URL, {useNewUrlParser: true }).then(() => {
     console.log("connected to database")
 }).catch((err) => {
     console.log(err)
 })
+mongoose.connection.on("connected", () => {
+    console.log("mongodb is connected");
+});
 
 const app = express();
 app.use(express.json())
@@ -24,7 +24,7 @@ app.use('/api/books', require("./routes/book_route"))
 app.use('/api/issues', require("./routes/issue_route"))
 
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.PORT === 'production') {
     app.use('/', express.static('client/build'))
 
     app.get('*', (req, res) => {
