@@ -18,9 +18,9 @@ const bookSchema = new mongoose.Schema({
        
     },
 
-    year: {
+    isbn: {
         type: String,
-        default:2021
+        
     },
   
     copies: {

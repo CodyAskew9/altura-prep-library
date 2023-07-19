@@ -28,7 +28,7 @@ const IssueSchema = new mongoose.Schema({
        
     },
 
-    year: {
+    isbn: {
         type: String,
     },
   
