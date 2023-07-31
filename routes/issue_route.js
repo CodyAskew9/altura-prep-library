@@ -14,7 +14,7 @@ router.post("/issueRequest", async (req, res) => {
    
 
 
-   const { title,author,publisher,year,userId,bookId,userBranch,userName,isRecom,copies } = req.body ;
+   const { title,author,publisher,isbn,userId,bookId,userBranch,userName,isRecom,copies } = req.body ;
    
    if(req.body.bookId != undefined){
     const Modbook = await Book.findOne({_id : bookId})
@@ -26,7 +26,7 @@ router.post("/issueRequest", async (req, res) => {
  
 
     const book = await new Issue({
-        title,author,publisher,year,userId,bookId,userBranch,userName,isRecom,copies
+        title,author,publisher,isbn,userId,bookId,userBranch,userName,isRecom,copies
     })
     await book.save();
 
