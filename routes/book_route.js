@@ -17,7 +17,7 @@ router.post("/addBook", async (req, res) => {
         obj[0].isRecom = false 
         await obj[0].save()
     }
-    const book = await new Book({ title,author,publisher,year,copies})
+    const book = await new Book({ title,author,publisher,isbn,copies})
     await book.save()
 
     // const book = new Book({
